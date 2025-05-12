@@ -45,3 +45,43 @@ string teacher::get_password() const
 {
 	return m_password;
 }
+
+string teacher::get_full_name() const
+{
+	return get_surname() + " " + get_name() + " " + get_middle_name();
+}
+
+void teacher::set_name(string name)
+{
+	m_name = name;
+}
+
+void teacher::set_surname(string surname)
+{
+	m_surname = surname;
+}
+
+void teacher::set_middle_name(string middle_name)
+{
+	m_middle_name = middle_name;
+}
+
+void teacher::set_subject(string subject)
+{
+	m_subject = subject;
+}
+
+void teacher::set_group(string group)
+{
+	m_group = group;
+}
+
+void teacher::set_login(string login)
+{
+	m_login = login;
+}
+
+void teacher::set_password(string password)
+{
+	m_password = password;
+}
